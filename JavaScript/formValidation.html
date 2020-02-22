@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<script type="text/javascript">
+		function Validation(){
+			var myName = document.myform.info.value;
+			var email = document.myform.email.value;
+			var district = document.myform.dist.value;
+			var gender = document.myform.gender.value;
+			var display = "";
+			var formName = document.myform;
+			var format = /^[A-z0-9]+@[A-z0-9]+\.[A-z]{2,3}$/;
+
+			for(i=5; i<formName.length; i++){
+				if (formName.elements[i].checked) {
+					display += formName.elements[i].value + ",";
+				}
+			}
+
+			if (myName=="" || myName==null) {
+				alert("Enetr your name")
+				return false;
+			}
+			else if (myName.length<6) 
+			{
+				alert("It should be 6 characters")
+				return false;
+			}
+			else if (email=="" || email==null) 
+			{
+				alert("Please insert a Email")
+				return false;
+			}
+			else if (!email.match(format)) 
+			{
+				alert("Please insert a valid Email")
+				return false;
+			}
+			else if (district=="" || district==null) 
+			{
+				alert("Please! Select one district")
+				return false;
+			}
+			else if (gender=="" || gender==null) 
+			{
+				alert("Please select gender")
+				return false;
+			}
+			else
+			{
+				var mywin = window.open("","mywidow","height=500 window=400")
+				mywin.document.write("Name: " + myName + "<br>");
+				mywin.document.write("Email: " + email + "<br>");
+				mywin.document.write("District: " + district + "<br>");
+				mywin.document.write("Gender: " + gender + "<br>");
+				mywin.document.write("Subject: " + display + "<br>");
+				
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="myform" onSubmit="return Validation()">
+		<tr><td width="200"><strong>Name:</strong></td>
+			<td><input type="text" name="info"></td>
+		</tr><br><br>
+		<tr><td width="200"><strong>Email:</strong></td>
+			<td><input type="email" name="email"></td>
+		</tr><br><br>
+		<tr>
+			<td width="200"><strong>District:</strong></td>
+			<td><select name="dist">
+				<option value="">Select District</option>
+				<option value="DHAKA">DHAKA</option>
+				<option value="DINAJPUR">DINAJPUR</option>
+				<option value="RAJSHAHI">RAJSHAHI</option>
+				<option value="COMILLA">COMILLA</option>
+				<option value="FARIDPUR">FARIDPUR</option>
+			</select></td>
+		</tr><br><br>
+		<tr><td width="200"><strong>Gender:</strong></td>
+			<td>Male<input type="radio" name="gender" value="MALE">
+			Female<input type="radio" name="gender" value="FEMALE">
+			Others<input type="radio" name="gender" value="OTHERS"></td>
+		</tr><br><br>
+		<tr>
+			<td width="200"><strong>Subject:</strong></td>
+			<td>PHP<input type="checkbox" name="checkbox" value="PHP">
+			PYTHON<input type="checkbox" name="checkbox" value="PYTHON">
+			JAVA<input type="checkbox" name="checkbox" value="JAVA">
+			DATABASE<input type="checkbox" name="checkbox" value="DATABASE">
+			JAVASCRIPT<input type="checkbox" name="checkbox" value="JAVASCRIPT"></td>
+		</tr><br><br>
+		<tr>
+			<td><input type="submit" value="Check Validation"></td>
+		</tr>
+		
+	</form>
+</body>
+</html>

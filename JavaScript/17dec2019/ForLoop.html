@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Loop</title>
+</head>
+<body>
+	<h2>Iterate fruits from array</h2>
+	<script>
+	//	var fruits = new Array("Apple","Orange","Grape","Watermelon","Jackfruit");
+		var fruits = ["Apple","Orange","Grape","Watermelon","Jackfruit"];
+
+		document.write(fruits);
+		document.write("<br>");
+		document.write(fruits[0]);
+		document.write("<br>");
+		document.write(fruits[1]);
+		document.write("<hr>");
+
+		for(var i = 0; i<fruits.length; i++){
+			document.write(fruits[i] + "<br>");
+
+		}
+
+
+		</script>
+		<h2>Iterate fruits with number list</h2>
+		<script>
+			document.write("<ol>")
+		for(var i = 0; i<fruits.length; i++){
+			document.write("<li>" +fruits[i] + "</li>");
+		}
+			document.write("<ol>")
+
+	</script>
+	
+</body>
+</html>

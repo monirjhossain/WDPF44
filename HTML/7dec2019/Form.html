@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+	<h2>Form1</h2>
+	<form>
+		<p><input type="text" name="first name" placeholder="Enter First Name"></p>
+		<p><input type="text" name="lname" placeholder="Enter last Name"></p>
+		<textarea name="Address" placeholder="Type your full address" rows="10" cols="20"></textarea>
+	
+	<p>
+		<input type="submit" name="submit" value="submit">
+	</p>
+	</form>
+
+	<h2>Form 2 (login Form)</h2>
+	<form>
+		<input type="email" name="email" placeholder="Enter you email"><br>
+		<input type="Password" name="Password" placeholder="Enter Password Correctly"><br>
+		<input type="submit" name="login" value="login">
+
+	</form>
+	<h2>Registration Form 3</h2>
+	<form action="process.php" method="post">
+		<input type="text" name="name" required placeholder="Enter your name"><br><br>
+		<textarea placeholder="Enter address"></textarea><br><br>
+		Male<input type="radio" name="gender" value="M">
+		Female<input type="radio" name="gender" value="F">
+		Others<input type="radio" name="gender" value="O"><br><br>
+		<select name="District" required="">
+			<option value="">Select One</option>
+			<option value="01">Dhaka</option>
+			<option value="02">Comilla</option>
+			<option value="03">Rajshahi</option>
+			<option value="04">Dinajpur</option>
+			<option value="05">Chittagong</option>
+		</select><br><br>
+		<input type="Password" name="Password" placeholder="Enter Password again"><br>
+		<input type="submit" name="register" value="REGISTER">
+		
+
+		</form>
+		<br><br><br><br>
+
+
+</body>
+</html>

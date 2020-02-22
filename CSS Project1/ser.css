@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+
+	background-image: url(picture/banner.jpg);
+	background-size: cover;
+	background-position: center;
+}
+header {
+	height: 100vh;
+	margin: 0 auto;
+	width: 1170px;
+}
+.main-menu ul {
+	float: right;
+	list-style-type: none;
+	/* padding: 25px 0; */
+}
+.main ul li{
+	display: inline-block;
+	padding: 25px 0;
+	/* background: red; */
+}
+.main ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 25px 30px;
+	/* border: 1px solid transparent; */
+	transition: 0.5s ease;
+	font-size: 18px;
+	border-radius: 1px;
+}
+.main ul li a:hover{
+	background-color: #2BE53D;
+	color: black;
+}
+.main ul li.active a {
+	background-color: #2BE53D;
+	color: black;
+}
+
+.main {
+	/* max-width: 1200px; */
+	margin: auto;
+}
+.container{
+	width: 360px;
+	height: 339px;
+	position: relative;
+	background: #0000004a;
+	top: 73px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px #2be53d;
+}
+.login-form{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	text-align: center;
+}
+
+.title {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+
+}
+.title h1 {
+	font-family: 'Bangers', cursive;
+	font-size: 40px;
+}
+input {
+    width: 100%;
+    height: 33px;
+    font-size: 18px;
+    padding-left: 5px;
+    background: #5252523b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+input.btn {background: #2be53d;font-weight: bold;}
+
+.login-form a {
+    font-size: 15px;
+    text-align: center;
+    color: #7b7979;
+    }
+form {
+    line-height: 45px;
+}
+.login-form h1 {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #9c9c9c85;
+    margin-bottom: 15px;
+}
+article {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.side-bar {
+    float: left;
+    width: 20%;
+    background: #404040;
+    height: 450px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.main-content {
+    color: white;
+    margin-left: 30px;
+    background: gray;
+    padding: 25px 25px 5px 25px;
+    width: 69.733333333%;
+    float: left;
+    border-radius: 5px;
+}
+.main-content p {
+	text-align: center;
+	bottom: 25px;
+	color: #ffffff;
+	font-size: 18px;
+	background: radial-gradient(black, transparent);
+	position: relative;
+}
+
+.side-bar ul {
+    float: none;
+}
+
+.side-bar ul li {
+    /* float: left; */
+    border-bottom: 1px solid #737373;
+}
+.side-bar ul li {
+    list-style: none;
+}
+.side-bar ul li a {
+    color: white;
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s ease;
+
+}
+
+.side-bar ul li a:hover {
+    color: #2be53d;
+    background: white;
+    padding-left: 10px;
+}
+.single-img {
+    width: 31.63333%;
+    float: left;
+    margin-left: 20px;
+    /* position: relative; */
+    margin-bottom: 20px;
+    height: 200px;
+}
+.single-img:first-child {
+    margin-left: 0;
+}
+
+.gallary img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.footer{
+	float: left;
+    padding: 15px;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.main-menu {
+    background: #171e267a;
+    overflow: hidden;
+    /* height: 45px; */
+    box-shadow: 1px 1px 5px #000000;
+}
+.logo {
+    float: left;
+    padding: 20px;
+}
+
+.logo span {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.single-service h5 {
+    /* float: left; */
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 10px 10px;
+}
+
+.single-service {
+    width: 31.4555555%;
+    float: left;
+    margin-left: 20px;
+    /* position: relative; */
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.single-service img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.single-service:first-child {
+    margin-left: 0;
+}
+p.about-content {
+    background: #B3B0B0;
+    color: green;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: left;
+    text-indent: 25px;
+}
+p.contact-content{
+    background: #B3B0B0;
+    color: green;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    text-indent: 25px;
+}

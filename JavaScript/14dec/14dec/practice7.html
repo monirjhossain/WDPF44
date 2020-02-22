@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prompt Number</title>
+	<style type="text/css">
+		#show{
+			background-color: blue;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<div id="show"></div>
+	<script>
+		var fn = prompt("Enter your first Number",'');
+		var ln = prompt("Enter your last Number",'');
+
+		fn = parseInt(fn);
+		ln = parseInt(ln);
+		var total = fn + ln;
+
+		var output = '';
+
+		output += "First Number is: " + fn + '</br>';
+		output += "last Number is: " + ln + '</br>';
+		output += "total Number: " + total + '</br>';
+
+		document.getElementById("show").innerHTML = output;
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function CheckItOut(form) {
+			var yourName=document.folks.info.value;
+			var district=document.folks.dist.value;
+			var email=document.folks.email.value;
+			var gender =document.folks.gender.value;
+			var display="";
+			var reviewer=document.folks;
+			for(var i=5; i<reviewer.length; i++)
+			{
+				if(reviewer.elements[i].checked){
+             display += reviewer.elements[i].value + "<br>";
+           }
+
+           }
+         
+
+			
+			
+			var format = /^[A-z0-9]+@[A-z0-9]+\.[A-z]{2,3}$/;
+
+			if(yourName=="" || yourName ==null)
+			{
+				alert("Please Enter Your Name");
+				return false;
+			}else if(yourName.length<6)
+			{
+				alert("name should be at least 6 chearacter");
+				return false;
+			}else if(district=="" || district ==null)
+			{
+				alert("Please one district");
+				return false;
+			}else if (email == "" || email == null){
+				alert("Please enter email");
+				return false;
+			}else if (!email.match(format)) {
+				alert("Please insert a Valid");
+				return false;
+			}else if(gender=="" || gender ==null)
+			{
+				alert("Please Enter your Gender");
+				return false;
+			}
+
+			else
+			{
+				//alert("Thanks,"+ yourName + " for sending in your name. ");
+			var mywin = window.open("", "windowname", "height=400, width=400");
+			mywin.document.write("Name: " + yourName + "<br>");
+			mywin.document.write("District: " + district + "<br>");
+			mywin.document.write("Email: " + email + "<br>");
+			mywin.document.write("Gender: " + gender + "<br>");
+			mywin.document.write("Sub:" + display + "<br>")
+
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="folks" onSubmit="return CheckItOut(this)">
+		Your name Please:
+		<input type="text" name="info"><br>
+		Email: <input type="text" name="email"><br>
+		District:<br> <select name="dist">
+			<option value="">Choose District</option>
+			<option>Dhaka</option>
+			<option>Mymensing</option>
+			<option>Khulna</option>
+		</select><br>
+		Gender:<br>
+		Male<input type="radio" name="gender" value="male">
+		Female<input type="radio" name="gender" value="female" ><br>
+		SUBJECT:<br>
+		PHP<input type="checkbox" name="PHP" value="PHP">
+		JAVA<input type="checkbox" name="JAVA" value="JAVA">
+		GAVE<input type="checkbox" name="GAVE" value="GAVE">
+		DATABASE<input type="checkbox" name="DATABASE" value="DATABASE">
+		<input type="submit" value="Click to Validate and Submit">
+		
+	</form>
+
+</body>
+</html>

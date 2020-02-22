@@ -1,0 +1,22 @@
+.service {
+	height: 300px;
+	background-color: green;
+	border:5px solid blue;
+
+}
+
+.slogan1{
+	height: 100px;
+	background-color: yellow;
+	border:2px solid pink;
+}
+.slogan2{
+	height: 100px;
+	background-color: blue;
+	border:2px solid magenta;
+}
+.banner {
+	height: 20px;
+	width: 60px
+	background-color:grey;
+}

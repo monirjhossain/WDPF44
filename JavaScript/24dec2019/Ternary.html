@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="number" id="age" value="" />
+    <button onclick="myFunction()">Check it</button>
+    
+    <p id="demo"></p>
+<script>
+	function myFunction() {
+  var age, voteable;
+  
+  age = document.getElementById("age").value;
+  
+  voteable = (age < 18) ? "Too young":"Old enough"; //like if else. This is Ternary operator.
+  
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image change</title>
+	<script>
+		var Tamim = new Image()
+		Tamim src = "Tamim.jpg";
+
+		var Shakib = new Image()
+		Shakib src = "Shakib.jpg";
+
+		function switch2(){
+			document.sample.src=Tamim.src
+		}
+		function switch1(){
+			document.sample.src=Shakib.src
+		}
+	</script>
+</head>
+<body>
+	
+	<a href="#" onMouseOver="switch2()" onMouseOut="switch1()">
+	<img name="sample" src="bird.jpg" border=0 width="200">
+</a>
+
+
+
+</body>
+</html>

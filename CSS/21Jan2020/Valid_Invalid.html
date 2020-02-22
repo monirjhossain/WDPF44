@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Valid Invalid</title>
+	<style>
+		input[type=email]:valid {
+			background-color: green;
+		}
+		input[type=email]:invalid {
+			background-color: red;
+		}
+		input[type=url]:valid {
+			background-color: green;
+			color: white;
+		}
+		input[type=url]:invalid {
+			background-color: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	Email<input type="email" name="email" required=""><br>
+	URL<input type="url" required=""><br>
+	<input type="submit" value="SUBMIT">
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function fillItIn(){
+	//Substitute your own email address on the next line
+	document.info.email.value="md.monirjhossain@gmail.com";
+	}
+	function fieldClear(){
+	//Substitute your own email address on the next line
+	document.info.email.value="";
+	}
+</script>
+</head>
+
+<body>
+<form name="info">
+
+Please Enter your email Address:
+<input type="text" name="email" onFocus="fillItIn()" onBlur="fieldClear()">
+	
+</form>
+</body>
+</html>

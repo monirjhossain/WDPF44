@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Value Checking</title>
+</head>
+<body>
+	<script>
+		function valueCheck(){
+			var x = document.myform.num1.value;
+			var y = document.myform.num2.value;
+			alert(x);
+			//alert("Values are " + x + " and " + y);
+		}	
+	</script>
+
+	<form name="myform">
+		<input type="number" name="num1"><br>
+		<input type="number" name="num2"><br>
+		<button onclick="valueCheck()">Value Check</button>
+	</form>
+
+</body>
+</html>

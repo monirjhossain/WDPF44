@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lay out using pure css</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper{
+			width: 1050px;
+			background-color: #d89595;
+			margin: 0 auto;
+		}
+		.banner{
+			width: 1000px;
+			height: 80px;
+			padding: 25px;
+			background-color:#75d2ea;
+			margin-bottom: 5px;
+			text-align: center;
+			 font-size: 50px;
+		}
+		.sidebar{
+			height: 300px;
+			width: 200px;
+			border: 2px solid #d89595;
+			padding: 25px;
+			float: left;
+			background-color: #75d2ea;
+			    text-align: center;
+		}
+		.main {
+			width: 756px;
+			border:2px solid #d89595;
+			padding: 18px;
+			float: left;
+			line-height: 1.6;
+			background-color: #f78888;
+			height: 313px;
+			text-align: center;
+		}
+		.footer{
+			clear:both;
+			width: 1006px;
+			padding: 20px;
+			border:2px solid white;
+			background-color: #d89595;
+			text-align: center;
+			background-color: #75d2ea;
+			font-size: 18px;
+			text-transform: uppercase;
+
+		}
+		.sidebar ul li {
+			list-style-type:none;
+		}
+		.sidebar ul {
+			line-height:1.6;
+			font-size: 20px;
+		}
+		.sidebar a {
+			/*text-decoration: none;*/
+			text-decoration-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	<div class="banner">Header</div>
+	<div class="sidebar">Aside</div>
+	<div class="main">Articel</div>
+	<div class="footer">Footer</div>
+	</div>
+</body>
+</html>

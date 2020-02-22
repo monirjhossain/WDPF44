@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<button onclick="openwin()">Click to open</button>
+<button onclick="closewin()">Click to open</button>
+<script>
+
+function onenwin(){
+	var x = window.open("","win1", "height:500");
+	x.document.write("Hello");
+	x.focus();
+	}
+	
+	function closewin(){
+		win1.close(win1)
+		}
+</script>
+</body>
+</html>

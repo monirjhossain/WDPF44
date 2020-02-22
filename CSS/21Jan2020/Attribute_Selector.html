@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Attribute Selector</title>
+	<style>
+		div[class*="test"] {
+			background: #ffff00;
+		}
+		p[class*="44"] {
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="First_test">The first div element.</div>
+	<div class="second_test">The first div element.</div>
+	<div class="Third_test">The first div element.</div>
+	<div class="forth_test">The first div element.</div>
+
+	<p class="test">This is some text in a paragraph</p>
+
+	<p class="round_44">text</p>
+	<div class="round_44">text</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form name="myform">
+	<input type="number" name="des">  
+    <input type="number" name="mcq">
+    <input type="number" name="evi">
+    <input type="button" value="RESULT" onClick="result()">  
+    </form>
+    <script>
+	function result(){
+		var x = document.myform.des.value;
+		var y = document.myform.mcq.value;
+		var z = document.myform.evi.value;
+		
+		var a = parseInt(x)
+		var b = parseInt(y)
+		var c = parseInt(z)
+		
+		if((a>=60)&&(b>=60)&&(c>=80)){
+			document.getElementById("show").innerHTML= "You are passed!";
+			}else{
+			document.getElementById("show").innerHTML= "You are failed!";
+				}
+		}
+	</script>
+    <p id="show"></p>
+</body>
+</html>

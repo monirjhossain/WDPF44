@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Validation</title>
+	<script type="text/javascript">
+		function Validation(form) {
+			 var yourName = document.myform.info.value;
+
+			 if (yourName == "") 
+			 {
+			 	alert("Please put your valid Name")
+			 	return false;
+			 }else
+			 {
+			 	alert("Thanks," + yourName + " giving your valid Name")
+			 	return true;
+			 }
+		}
+	</script>
+</head>
+<body>
+	
+	<form name="myform" onSubmit= "return Validation()">
+		Valid Name:<input type="text" name="info">
+		<input type="submit" value="Click to check">
+
+	</form>
+</body>
+</html>

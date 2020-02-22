@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Function</title>
+</head>
+<body>
+	<h2>User defined function without parameter</h2>
+
+	<script>
+		function addition(){
+			var x = 10;
+			var y = 20;
+
+			var z = x + y;
+			document.write(z +'<br>');
+		}
+	</script>
+	<script>
+		addition();
+
+		addition();
+	</script>
+	<h2>User defined function without parameter</h2>
+
+	<script>
+		function myAddition(num1, num2){
+			var total = num1 + num2;
+			document.write(total + "<br>")
+		}
+
+		myAddition(20, 50);
+		myAddition(100, 500);
+	</script>
+	<script>
+		function days2minute(day){
+			var min = day*24*60;
+			return min;
+		}
+
+		alart(days2minute(1));
+	</script>
+
+</body>
+</html>

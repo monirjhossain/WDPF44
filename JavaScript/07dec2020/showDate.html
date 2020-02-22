@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Find a date</title>
+</head>
+
+<body>
+
+
+<script>
+	function findDay(){
+	var udate = document.myform.userdate.value;
+	var x = new Date(udate);
+	var y = x.getDay();
+	var r = "";
+	var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+	/*switch(y){
+		case 0: r = "Sunday"; break;
+		case 1: r = "Monday"; break;
+		case 2: r = "Tuesday"; break;
+		case 3: r = "Wednesday"; break;
+		case 4: r = "Thursday"; break;
+		case 5: r = "Friday"; break;
+		case 6: r = "Saturday"; break;
+		default: r = "Please enter a date"; break;
+		}
+		alert(r);*/
+		alert(days[y])
+	}
+</script>
+<form name="myform">
+<input type="date" name="userdate">
+</form>
+<button onClick="findDay()">Click to the day</button>
+		
+</body>
+</html>

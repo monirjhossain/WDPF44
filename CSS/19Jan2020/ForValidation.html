@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Validation</title>
+	<script>
+		function Validtaion(form){
+			var yourId = document.myform.id.value;
+			var yourPassword = document.myform.password.value;
+			var YourName = document.myform.name.value;
+			var Address = document.myform.Add.value;
+			var Country = document.myform.count.value;
+			var ZIPCode = document.myform.zicde.value;
+			var Email = document.myform.email.value;
+			var Gender = document.myform.gender.value;
+			//var Language = document.myform.langu.value;
+			var About = document.myform.about.value;
+			var format = /[A-z]$/;
+			var format = /^[A-z0-9]+@[A-z0-9]+\.[A-z]{2,3}$/;
+
+			if (yourId=="" || yourId.legnth<6) {
+				alert("enter your user Id")
+				return false;
+			}
+			else if (email.match(formatN)) {
+				alert("It should be 7 to 12 character")
+				return false;
+			}
+			else if (yourPassword=="") {
+				alert("Please enter your Password")
+				return false;
+			}
+			else if (YourName=="") {
+				alert("Please Enter your Name")
+				return false;
+			}
+			else if (Address=="") {
+				alert("Please Enter your Address")
+				return false;
+			}
+			else if (Country=="") {
+				alert("Please select one country")
+				return false;
+			}
+			else if (ZIPCode=="") {
+				alert("Please enter your zipcode")
+				return false;
+			}
+			else if (Email=="") {
+				alert("Please enter your Email")
+				return false;
+			}
+			else if (!email.match(format)) {
+				alert("Input valid Email address")
+				return false;
+			}
+			else if (Gender=="") {
+				alert("Please select gender")
+				return false;
+			}
+			/*else if (Language=="") {
+				alert("Please select Language")
+				return false;
+			}*/
+			else if (About=="") {
+				alert("Please write your about")
+				return false;
+			}
+			else{
+				var mywin = window.open("","mywindow","with=50","height=100",",")
+				mywindow.document.write("User ID: " + yourId + "<br>")
+				mywindow.document.write("Password: " + yourPassword + "<br>")
+				mywindow.document.write("Name: " + YourName + "<br>")
+				mywindow.document.write("Address: " + Address + "<br>")
+				mywindow.document.write("Country: " + Country + "<br>")
+				mywindow.document.write("ZIP Code: " + ZIPCode + "<br>")
+				mywindow.document.write("Email: " + Email + "<br>")
+				mywindow.document.write("Gender: " + Gender + "<br>")
+				mywindow.document.write("About: " + About + "<br>")
+
+
+				return true;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<form name="myform" onSubmit="return Validtaion(this)" align="center">
+		<table>
+			<tr>
+				<td width="100">User Id:</td>
+				<td><input type="number" name="id" ></td>
+			</tr>
+			<tr>
+				<td width="100">Password:</td>
+				<td><input type="number" name="password" ></td>
+			</tr>
+			<tr>
+				<td width="100">Name:</td>
+				<td><input type="text" name="name" ></td>
+			</tr>
+			<tr>
+				<td width="100">Address:</td>
+				<td><textarea name="Add" cols="10" rows="3" placeholder="Optional"></textarea></td>
+			</tr>
+			<tr>
+				<td width="100">Country:</td>
+				<td><select name="count" >
+					<option value="Bangladesh">Bangladesh</option>
+					<option value="India">India</option>
+					<option value="Newzealand">Newzealand</option>
+					<option value="Australia">Australia</option>
+					<option value="Pakistan">Pakistan</option>
+					<option value="Srilanka">Srilanka</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td width="100">ZIP Code:</td>
+				<td><input type="number" name="zicde" value="ZIPCODE" ></td>
+			</tr>
+			<tr>
+				<td width="100">Email:</td>
+				<td><input type="Email" name="email"></td>
+			</tr>
+			<tr>
+				<td width="100">Gender</td>
+				<td><input type="radio" name="gender" value="MALE" >Male
+					<input type="radio" name="gender" value="FEMALE" >Female
+				</td>
+			</tr>
+			<!--<tr>
+				<td width="100">Language:</td>
+				<td><input type="radio" name="langu" value="English" required>English
+					<input type="radio" name="langu" value="Non English" required >Non English
+				</td>
+			</tr>-->
+			<tr>
+				<td width="100">About:</td>
+				<td><textarea name="about" cols="30" rows="10" placeholder="Optional"></textarea></td>
+			</tr>
+			<tr>
+				<td width="100"></td>
+				<td><input type="submit" value="Click to validat and submit"></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>

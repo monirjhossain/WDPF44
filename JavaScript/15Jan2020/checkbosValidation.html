@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkbox</title>
+	<script type="text/javascript">
+		function validity(){
+			var check1 = document.myform;
+			
+			var display="";
+
+
+			for(var i=0; i<check1.length; i++){
+				if (check1.elements[i].checked){
+				display += check1.elements[i].value + "<br>";
+				}
+			}
+				
+				
+
+		var mywin= window.open("","windowname","height=400","width=400");
+			mywin.document.write(display)
+
+		}
+	</script>
+</head>
+<body>
+	<form name="myform" onsubmit="return validity()">
+		PHP<input type="checkbox" name="PHP" value="PHP">
+		Oracle<input type="checkbox" name="Oracle" value="ORACLE">
+		Java<input type="checkbox" name="Java" value="JAVA">
+		Javascript<input type="checkbox" name="Javascript" value="JAVASCRIPT">
+		MySQL<input type="checkbox" name="MySQL" value="MYSQL">
+		<input type="submit" name="submit" value="SUBMIT">
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Horizontal Menu</title>
+	<style>
+		ul {
+			list-style-type: none;
+			background-color: lightblue;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		li {
+			float: left;
+			border-right: 1px solid green;
+		}
+		 li:last-child{border-right: none;}
+		li a {
+			text-decoration: none;
+			padding: 10px 20px;
+			font-size: 18px;
+			display: block;
+
+		}
+		li a:hover{
+			background-color: #000;
+			color: #fff;
+		}
+		.active {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+		<li style="float:right"><a href="#">Search</a></li>
+	</ul>
+</body>
+</html>

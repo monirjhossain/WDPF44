@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Slice Array</title>
+</head>
+
+<body>
+<p>Click the button to extract the second and the third elements from the array.</p>
+
+<script>
+
+  var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+  var sliceitem = fruits.slice(0, 4);
+  //document.(sliceitem);
+  var display = "";
+  
+  for( var i=0; i<sliceitem.length; i++){
+	  display += sliceitem[i] + "</br>";
+	  }
+	  
+	  document.write(display);
+  
+</script>
+</body>
+</html>

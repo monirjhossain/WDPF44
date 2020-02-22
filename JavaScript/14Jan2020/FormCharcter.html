@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Validation</title>
+	<script type="text/javascript">
+		function Validation(form) {
+			 var yourName = document.myform.info.value;
+			 var district = document.myform.dist.value;
+
+			 if (yourName == "") 
+			 {
+			 	alert("Please put your valid Name")
+			 	return false;
+			 }else if (yourName.length<6) 
+			 {
+			 	alert("requred atleast 6 character")
+			 	return false;
+
+			 }else if (district=="" || district== null) 
+			 {
+			 	alert("Please one district")
+			 	return false;
+			 } else{
+			 	return true;
+			 }
+
+			 /*else
+			 {
+			 	alert("Thanks," + yourName + " giving your valid Name")
+			 	return true;
+			 }*/
+		}
+	</script>
+</head>
+<body>
+	
+	<form name="myform" onSubmit= "return Validation()">
+		Valid Name:<input type="text" name="info">
+		<p>District:<select name="dist">
+			<option value="">Select one item</option>
+			<option value="Dhaka">Dhaka</option>
+			<option value="Rajshahi">Rajshahi</option>
+			<option value="Barisal">Barisal</option>
+		</select></p>
+		<p><input type="submit" value="Click to check"></p>
+
+	</form>
+</body>
+</html>

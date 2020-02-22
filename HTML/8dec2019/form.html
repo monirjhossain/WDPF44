@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+	<h2>Personal details</h2>
+	<form action="" method="post">
+		<fieldset>
+			<legend>Login info</legend><br>
+			<label>Enail</label>
+			<input type="email" name="email" placeholder="Enter email"><br>
+			<label>Password</label>
+			<input type="password" name="password" placeholder="Enter password"><br>
+			<label>Repassword</label>
+			<input type="password" name="Repassword" placeholder="Retype password">
+		</fieldset>
+		<fieldset>
+			<input type="text" name="name" placeholder="Write name"> <br>
+			<textarea name="Address" rows="7" cols="25" placeholder="write full Address"></textarea><br>
+			<select name="District" required="">
+				<optgroup label="Dhaka">
+					<option>Select One</option>
+					<option>Jatrabari</option>
+					<option>Shewrapara</option>
+					<option>Dhanmodi</option>
+				</optgroup>
+				<optgroup label="Rajshahi">
+					<option>Khan pur</option>
+					<option>Masdair</option>
+					<option>Isdair</option>
+				</optgroup>
+				<optgroup label="Comilla">
+				<option>Gouripur</option>
+				<option>Zeroaish</option>
+				<option>Bagharampur</option>
+				</optgroup>
+				<optgroup label="Narayanganj">
+				<option>Chashara</option>
+				<option>Amlapara</option>
+				<option>Nitaiganj</option>
+				</optgroup>
+
+				
+			</select><br>
+			<label>Hobies</label><br>
+			Cricket<input type="checkbox" name="Cricket" value="Cric">
+			Football<input type="checkbox" name="football" value="foot">
+			Handball<input type="checkbox" name="Handball" value="Hand">
+			Kabadi<input type="checkbox" name="Kabadi" value="kabadi"><br>
+		
+		<input type="submit" name="save" value="save">
+		<button type="submit">Submit</button>
+		<input type="reset" name="reset" value="RESET">
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>

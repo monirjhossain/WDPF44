@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var string = "Is this all there is?";
+  var pattern = /[a-z]/gi;
+  var result = string.match(pattern);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

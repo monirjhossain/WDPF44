@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Go get It</title>
+</head>
+
+<body>
+	<script>
+	function checkIt(){
+		var varify= document.pass.word.value;
+		if (varify=="JavaScript"){
+			alert("You may pass.")
+			}else{
+				alert("Sorry Jack, you/'re out of luck")
+				}
+		}
+	</script>
+    <body>
+    <h3>Please enter your password and then 
+    <br> click on the page out of the text box</h3>
+    
+    <div>
+    <form name="pass">
+    Name: <input type="text" name="uname"><br>
+    Password: <input type="password" name="word" onBlur="checkIt( );"> more space
+    </div>
+    </body>
+    
+</body>
+</html>

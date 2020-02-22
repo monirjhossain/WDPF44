@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Swap simple</title>
+	<script>
+		var bird = new Image();
+		bird.src= "bird1.jpg";
+
+		var tiger = new Image();
+		tiger.src= "Tiger.jpg";
+
+		function switch2(){
+			document.sample.src=bird.src
+		}
+
+		function switch1(){
+			document.sample.src=tiger.src
+		}
+	</script>
+</head>
+<body>
+	
+<a href="#" onMouseOver="switch2()" onMouseOut="switch1()">
+	<img name="sample" src="Masjid.jpg" border=0 width="200">
+</a>
+
+</body>
+</html>

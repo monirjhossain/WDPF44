@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prime</title>
+</head>
+
+<body>
+<script>
+	
+
+	function testprime(n){
+		var n = parseInt(prompt("enter your value"));
+		if (n==1){
+		return "Not A prime Number";
+		} else if (n==2){
+				return n + "is a prime Number";
+				}else{
+					for(var x = 2; x<n; x++){
+						if(n%x == 0){
+							return n + " is not a Prime number";
+							
+						  }
+						}
+						return n + " is a prime number"
+				}
+			}
+			document.write(testprime());
+
+
+</script>
+
+</body>
+</html>

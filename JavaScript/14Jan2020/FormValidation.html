@@ -1,0 +1,41 @@
+<DOCTYPE! html>
+<head>
+<title>Simple Validation</title>
+<script language="JavaScript">
+
+	function Validate(form) {
+
+ var yourName = document.folks.info.value;
+ var district = document.folks.dist.value;
+ var email = document.folks.email.value;
+
+ 	if (yourName=="") {
+ 		alert("Please enter your name")
+ 		return false;
+ 	}else if (yourName.length<6) {
+ 		alert("Name shoud be at least 6 character");
+ 		return false;
+ 	} else if (district=="" || district == null) {
+ 		alert("Please select one district")
+ 		return false; }
+ 	 else{
+ 		return true;
+ 	}
+ }
+</script>
+</head>
+<body>
+<form name="folks" onSubmit="return Validate()">
+Your Name Please:<br>
+<input type=text name="info"><br>
+District:<br><select name="dist">
+	<option value="">Select one</option>
+	<option value="Dhaka">Dhaka</option>
+	<option value="Rajshahi">Rajshahi</option>
+	<option value="Khulna">Khulna</option>
+</select><br>
+Email:<br><input type="email" name="email"><br>
+<input type=submit value="Click to Validate and Submit"><br>
+</form>
+</body>
+</html> 

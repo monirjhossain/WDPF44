@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop down color change</title>
+	<script type="text/javascript">
+		function bgclr(){
+			var inputclr= document.getElementById('inputcolor').value;
+			document.body.style.backgroundColor= inputclr;
+		}
+	</script>
+	
+</head>
+<body>
+	<h1><b>Drop down color</b></h1>
+	<form>
+	<select id="inputcolor" onchange="bgclr(this)">
+		<option value="">Select One</option>
+		<option value="RED">Red</option>
+		<option value="BLUE">Blue</option>
+		<option value="PINK">Pink</option>
+		<option value="YELLOW">Yellow</option>
+	</select>
+	</form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prompt in JS</title>
+</head>
+	<style type="text/css">
+	#show{
+	background-color:green;
+	color: white;
+}
+</style>
+<body>
+	<div id="show"></div>
+	<script>
+		/*/var x = 2
+		//var y = 6
+		//var z = x+y 
+		//document.write(z)
+
+		var fn = prompt ('Enter your firs tnumber',"")
+		var ln = prompt ('Enter your last number',"")
+		
+
+		fn = parseInt (fn);
+		ln = parseInt (ln);
+		var total = fn + ln; 
+
+		document.write("<p>first number is " + fn + "</p>");
+		document.write("<p>last number is " + fn + "</p>");
+		document.write("<p>Total number is " + total + "</p>");
+		//var firstname = prompt ('Enter your firstname',"")
+		//var lastname = prompt ('Enter your last name',"")
+		//var fullname = prompt("Enter your name", "");
+		//document.write("firstname: " +"<b>" + firstname + "</b>" );
+		//document.write("<br> lastname: " +"<b>" + lastname + "</b>" );
+		//for collecting data from user.
+		
+	
+	
+		//var firstnumber = prompt ('Enter your firstname',"")
+		//var lastnumber = prompt ('Enter your last name',"")
+
+		//document.write()
+		*/
+
+	</script>
+	<script>
+		var fn = prompt ('Enter your first number',"")
+		var ln = prompt ('Enter your last number',"")
+		
+
+		fn = parseInt (fn);
+		ln = parseInt (ln);
+		var total = fn + ln;
+
+		var output = '';
+
+		output += " First Number is " + fn + "</br>";
+		output += " Last Number is " + ln + "</br>";
+		output += " Total Number is " + total + "</br>"
+
+		document.getElementById("show").innerHTML = output;
+	</script>
+
+</body>
+</html>

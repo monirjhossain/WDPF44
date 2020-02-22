@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name/Character/District</title>
+	<script type="text/javascript">
+		function Validation() {
+			var yourName = document.myName.info.value;
+			var district = document.myName.dist.value;
+			var email = document.myName.email.value;
+			var format = /^[A-z0-9]+@[A-z0-9]+\.[A-z]{2,3}$/;
+			var gender = document.myName.
+
+			if (yourName=="" || yourName== null) 
+			{
+				alert("Please enter your valid name")
+				return false;
+			}else if (district=="" || district== null) 
+			{
+				alert("Please select district")
+				return false;
+			} else if (email=="" || email== null) 
+			{
+				alert("Please input email")
+				return false;
+
+			} else if (!email.match(format)) 
+			{
+				alert("Please insert valid email")
+				return false;
+			}else
+
+			else{
+				return true;
+			}
+
+
+		}
+	</script>
+</head>
+<body>
+	<form name="myName" onSubmit="return Validation()">
+		<p>Valid Name:<input type="text" name="info"></p>
+		<p><select name="dist">
+			<option value="">Select One</option>
+			<option value="Dhaka">Dhaka</option>
+			<option value="Rajshahi">Rajshahi</option>
+			<option value="Sylhet">Sylhet</option>
+		</select></p>
+		<p>Male<input type="radio" name="Male" >
+		Female<input type="radio" name="gender"></p>
+		<p>Email:<input type="text" name="email"></p>
+		<p><input type="submit" value="Click to check"></p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body style="">
+<h1>Result</h1>
+<form name="myform">
+	<b>Descriptive:</b><input type="number" name="des">
+    <b>MCQ:</b><input type="number" name="mcq">
+    <b>Evidence:</b><input type="number" name="evi">
+    <input type="button" value="RESULT" onClick="result()">
+    
+</form>
+<script>
+	function result(){
+		var a = document.myform.des.value;
+		var b = document.myform.mcq.value;
+		var c = document.myform.evi.value;
+		
+		var x = parseInt(a);
+		var y = parseInt(b);
+		var z = parseInt(c);
+		
+		
+		if((x>=60)&&(y>=60)&&(z>=90)){
+			document.getElementById("show").innerHTML="<b>You are passed!</b>";
+			
+			}else{
+				document.getElementById("show").innerHTML="<b>You are Failed!</b>";
+				}
+		
+		}
+</script>
+	<p id="show"></p>
+</body>
+</html>

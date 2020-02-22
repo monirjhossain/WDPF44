@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+var found = "Email address is missing @ symble:";
+var emailAd = prompt("Please enter your address:","");
+
+for (var counter = 0; counter<= emailAd.length; counter++){
+var findAt= emailAd.charAt(counter);
+
+//document.write(findAt + "<br/>");
+
+if (findAt=="@"){
+	found= "Email address has @ symble";
+	}
+}
+document.write(found);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Days to minute</title>
+</head>
+<body>
+	<div id="show"></div>
+	<script>
+	
+		function days2minute(day){
+			var min = day*24*60;
+			var d = day
+			return day + " days(s) In minutes: " + min;
+		}
+
+		var output = days2minute(5);
+		document.getElementById("show").innerHTML = output; 
+
+	</script>
+
+
+</body>
+</html>

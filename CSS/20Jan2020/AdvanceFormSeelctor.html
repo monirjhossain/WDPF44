@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Advance Form selector</title>
+	<style>
+		input[type=text]:enabled {
+			background-color: green;
+			color: white;
+		}
+		input[type=text]:disabled {
+			background-color: grey;
+		}
+		input[type=radio]:checked {
+			height: 25px;
+			width: 25px;
+		}
+		input[type=checkbox]:checked {
+			height: 25px;
+			width: 25px;
+			background-color: red;
+		}
+
+
+
+	</style>
+</head>
+	<h3>Form Advance Selector</h3>
+<body>
+	<form action="">
+		<input type="text" name="fullName" placeholder="enter your full name"><br>
+		<input type="text" name="fName" placeholder="enter your father's name"><br>
+		<input type="text" name="mName" placeholder="enter your mother's name"><br>
+		<input type="text" name="peraddress" placeholder="enter your permanent address" disabled=""><br>
+		Male<input type="radio" name="gender" value="Male">
+		Female<input type="radio" name="gender" value="Female"><br>
+		Cricket<input type="checkbox" name="Cricket" value="cric">
+		Football<input type="checkbox" name="Football" value="foot">
+		Baseball<input type="checkbox" name="Baseball" value="base"><br>
+		<input type="submit" name="">
+	</form>
+</body>
+</html>
